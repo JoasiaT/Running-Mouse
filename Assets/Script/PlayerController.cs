@@ -5,6 +5,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public float moveSpeed = 2f;
+    public Animator animator;
    // public Transform minXPlayerPos;
 
     // Start is called before the first frame update
@@ -58,6 +59,10 @@ public class NewBehaviourScript : MonoBehaviour
 
             }
 
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animator.Play("Jump");
         }
     }
        
