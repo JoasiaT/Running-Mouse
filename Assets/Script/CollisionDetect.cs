@@ -1,8 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CollisionDetect : MonoBehaviour
+
+// ..................................................."The Begginer Guide"...................................................................
+// (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
+// (2) ("Take collision") -----> Metoda zostaje wykonana na wejsciu kolizji
+// (3)  SceneManager.LoadScene(SceneManager.GetActiveScene().name) ----> SceneManager wczytuje scene ktora aktualnie dziala
+//
+
+//............................................................................................................................................
 {
     // Start is called before the first frame update
     void Start()
@@ -16,11 +26,12 @@ public class CollisionDetect : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) //(*)
     {
-        if (collision.gameObject.tag == "Obsticle") //Sprawdza czy gameObject z którym dosz³o do kolizji ma tag "Obsticle"
+        if (collision.gameObject.tag == "Obsticle")
         {
-            Debug.Log("Take collision"); // Metoda zostaje wykonana na wejœciu kolizji
+            Debug.Log("Take collision"); //(2*)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);//(3*)
         }
         
     }
