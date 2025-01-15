@@ -288,6 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   animator: {fileID: 172573390}
+  points: 0
 --- !u!95 &172573390
 Animator:
   serializedVersion: 5
@@ -644,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f2027822988964aa60ea04f4e2feb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 172573389}
 --- !u!1 &2115597120
 GameObject:
   m_ObjectHideFlags: 0

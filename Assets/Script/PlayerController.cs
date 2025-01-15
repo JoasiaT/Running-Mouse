@@ -2,11 +2,11 @@
 //using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 2f;
     public Animator animator; //(7)
-    public int point = 0;
+    public int points = 0;
 
    // public Transform minXPlayerPos;
 
