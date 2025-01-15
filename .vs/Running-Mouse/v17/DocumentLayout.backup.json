@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\CollisionDetect.cs",
               "ToolTip": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\CollisionDetect.cs",
               "RelativeToolTip": "Assets\\Script\\CollisionDetect.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T21:15:40.32Z",
               "EditorCaption": ""
@@ -43,8 +43,7 @@
               "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T20:09:45.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T20:09:45.868Z"
             }
           ]
         }

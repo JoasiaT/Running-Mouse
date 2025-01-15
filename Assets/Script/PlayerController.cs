@@ -5,7 +5,9 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public float moveSpeed = 2f;
-    public Animator animator;
+    public Animator animator; //(7)
+    public int point = 0;
+
    // public Transform minXPlayerPos;
 
     // Start is called before the first frame update
@@ -21,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         //.................................................INSTRUKCJA_K0D0WANIA_W_C#............................................................//
         // 1) JESLI wciskamy przycisk A to jest to w 'if'
 
-        // 2) JESLI pozycja gracza na osi X jest wiêksza od -3.55f to wykonaj to co wewnontrz klamry ykonuje siê to je¿eli warunek jest spe³niony
+        // 2) JESLI pozycja gracza na osi X jest wiêksza od -3.55f to wykonaj to co wewnontrz klamry wykonuje siê to je¿eli warunek jest spe³niony
 
         // 3) 'transform.Translate' przesuwa obiekt o Vector
 
@@ -31,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
 
         // 6) przyk³ad:  if (Input.GetKey(KeyCode.E)) <-  WARUNEK jest w nawiasie obok 'if'.      <  'if' -> Warunek    >
 
-        // 7)
+        // 7)   public Animator animator --> referencja do animatora
 
         //......................................................................................................................................//
 

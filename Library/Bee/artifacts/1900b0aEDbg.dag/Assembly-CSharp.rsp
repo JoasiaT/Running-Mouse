@@ -355,6 +355,7 @@
 "Assets/Movment.cs"
 "Assets/Script/CollisionDetect.cs"
 "Assets/Script/GroundController.cs"
+"Assets/Script/ObstacleController.cs"
 "Assets/Script/PlayerController.cs"
 "Assets/Supercyan Character Pack Animal People Sample/Scripts/AccessoryLogic.cs"
 "Assets/Supercyan Character Pack Animal People Sample/Scripts/AccessoryWearLogic.cs"
