@@ -3,13 +3,16 @@
 using UnityEngine;
 
 public class ObstacleController : MonoBehaviour
-
 {
+    // ..................................................."The Begginer Guide"...................................................................
+
+    // (1) playerController.points ++ ---> Dodanie do zmiennej Points +1
+
     public PlayerController playerController;
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
         
     }
 
@@ -18,12 +21,8 @@ public class ObstacleController : MonoBehaviour
     {
         if (transform.position.z < -1.29)
         {
-            Debug.Log("Box is behind the Player");
-           playerController.points ++; //-> Dodanie do zmiennej Points +1
-
-
-            Destroy(gameObject);
-            //Dodanie punktu
+           playerController.points ++; // (1)
+           Destroy(gameObject);
         }
     }
 }

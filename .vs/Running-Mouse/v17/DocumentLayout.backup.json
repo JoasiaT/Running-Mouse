@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\obstaclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\assets\\script\\collisiondetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\collisiondetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|c:\\repozytorium\\running-mouse\\running-mouse\\assets\\script\\collisiondetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\collisiondetect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3F2B750-C793-4250-FB5C-7A6039A5FDFD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,33 +32,33 @@
               "RelativeDocumentMoniker": "Assets\\Script\\ObstacleController.cs",
               "ToolTip": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\ObstacleController.cs",
               "RelativeToolTip": "Assets\\Script\\ObstacleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T12:49:34.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CollisionDetect.cs",
               "DocumentMoniker": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\CollisionDetect.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CollisionDetect.cs",
               "ToolTip": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\CollisionDetect.cs",
               "RelativeToolTip": "Assets\\Script\\CollisionDetect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T21:15:40.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerController.cs",
               "ToolTip": "C:\\Repozytorium\\Running-Mouse\\Running-Mouse\\Assets\\Script\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-12T20:09:45.868Z",
               "EditorCaption": ""

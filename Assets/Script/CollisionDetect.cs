@@ -8,9 +8,10 @@ public class CollisionDetect : MonoBehaviour
 
 // ..................................................."The Begginer Guide"...................................................................
 // (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
+
 // (2) ("Take collision") -----> Metoda zostaje wykonana na wejsciu kolizji
+
 // (3)  SceneManager.LoadScene(SceneManager.GetActiveScene().name) ----> SceneManager wczytuje scene ktora aktualnie dziala
-//
 
 //............................................................................................................................................
 {
@@ -26,12 +27,12 @@ public class CollisionDetect : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision) //(*)
+    private void OnCollisionEnter(Collision collision) //(1)
     {
         if (collision.gameObject.tag == "Obsticle")
         {
-            Debug.Log("Take collision"); //(2*)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);//(3*)
+            //Debug.Log("Take collision"); //(2)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
         }
         
     }
