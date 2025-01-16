@@ -147,9 +147,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.38910544
-  m_Height: 1.4265972
+  m_Height: 1.3301951
   m_Direction: 1
-  m_Center: {x: -4.8485814e-13, y: 0.46037883, z: -0.0357548}
+  m_Center: {x: -4.1171866e-12, y: 0.5085799, z: -0.0357548}
 --- !u!114 &25143174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  jumpSpeed: 3.5
   animator: {fileID: 172573390}
   points: 0
 --- !u!95 &172573390
@@ -1125,6 +1126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  playerController: {fileID: 172573389}
+  speed: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

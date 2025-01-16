@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float jumpSpeed = 3.5f;
+    public float moveSpeed = 3f;
+    public float jumpSpeed = 5f;
     public Animator animator; //(7)
     public int points = 0;
 
@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             animator.Play("Jump");
+
         }
     }
        
