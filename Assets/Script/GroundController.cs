@@ -23,7 +23,7 @@ public class GroundController : MonoBehaviour
 
         if (transform.position.z > -4.465)
         {
-            playerController.moveSpeed++; // (1)
+            //playerController.moveSpeed++; // (1) -----> Jak to bylo inaczej napisane? Gdzie to jest w filmiku? 
             
         }
     }
