@@ -147,9 +147,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.38910544
-  m_Height: 1.3301951
+  m_Height: 1.3049122
   m_Direction: 1
-  m_Center: {x: -4.1171866e-12, y: 0.5085799, z: -0.0357548}
+  m_Center: {x: -4.598866e-13, y: 0.4545588, z: -0.0357548}
 --- !u!114 &25143174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e6ce04d433343045b4f0d98c903c163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
-  jumpSpeed: 3.5
+  moveSpeed: 3
+  jumpSpeed: 5
   animator: {fileID: 172573390}
   points: 0
 --- !u!95 &172573390
