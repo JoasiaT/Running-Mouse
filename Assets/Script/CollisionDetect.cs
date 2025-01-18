@@ -34,6 +34,12 @@ public class CollisionDetect : MonoBehaviour
             //Debug.Log("Take collision"); //(2)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
         }
-        
+        if (collision.gameObject.tag == "Shield")
+        {
+            Debug.Log("shield activated");
+            
+        }
+
+
     }
 }
