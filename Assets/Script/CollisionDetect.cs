@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 
 
 public class CollisionDetect : MonoBehaviour
-
-// ..................................................."The Begginer Guide"...................................................................
-// (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
-
-// (2) ("Take collision") -----> Metoda zostaje wykonana na wejsciu kolizji
-
-// (3)  SceneManager.LoadScene(SceneManager.GetActiveScene().name) ----> SceneManager wczytuje scene ktora aktualnie dziala
-
-//............................................................................................................................................
 {
+    public PlayerController playerController;
+   
+        // ..................................................."The Begginer Guide"...................................................................
+        // (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
+
+        // (2) ("Take collision") -----> Metoda zostaje wykonana na wejsciu kolizji
+
+        // (3)  SceneManager.LoadScene(SceneManager.GetActiveScene().name) ----> SceneManager wczytuje scene ktora aktualnie dziala
+
+        //............................................................................................................................................
+
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +36,25 @@ public class CollisionDetect : MonoBehaviour
         {
             //Debug.Log("Take collision"); //(2)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
+            if (playerController.playerHasShield)
+            {
+                playerController.playerHasShield = false;
+                playerController.shieldGameObject.SetActive(false);
+            }
+            else
+            {
+ 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
         if (collision.gameObject.tag == "Shield")
         {
             Debug.Log("shield activated");
-            
+            playerController.shieldGameObject.SetActive(true);
+            playerController.playerHasShield = true;
+            Destroy(collision.gameObject);
         }
+
 
 
     }

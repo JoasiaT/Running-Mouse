@@ -8,13 +8,16 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 5f;
     public Animator animator; //(7)
     public int points = 0;
+    public GameObject shieldGameObject;
+    public bool playerHasShield = false;
 
    // public Transform minXPlayerPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        shieldGameObject.SetActive(false);
+        playerHasShield = false;
     }
 
     // Update is called once per frame
