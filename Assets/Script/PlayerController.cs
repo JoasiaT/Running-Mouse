@@ -44,20 +44,20 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A)) // (1)
         {
-            if (transform.position.x > -3.55f) // (2)
+            if (transform.position.x > -2.55f) // (2)
 
                //if (transform.position.x > minXPlayerPos.position.x) -> Ten fragment u¿ywa sie, gdy dodaje siê ogranicznik w formie EmptyObject (8)
             {
                 transform.Translate(Vector3.left * Time.deltaTime * moveSpeed); // (3) i (4)
             }
-            else if (transform.position.x < 3.55f) // (5)
+            else if (transform.position.x < 1.55f) // (5)
             {
 
             }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            if (transform.position.x < 3.55f)
+            if (transform.position.x < 1.55f)
             {
                 transform.Translate(Vector3.right * Time.deltaTime * moveSpeed);
             }

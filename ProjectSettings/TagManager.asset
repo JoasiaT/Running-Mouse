@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obsticle
   - Shield
+  - Piano
   layers:
   - Default
   - TransparentFX
