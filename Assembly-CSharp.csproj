@@ -62,16 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\CollisionDetect.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryLogic.cs" />
     <Compile Include="Assets\Movment.cs" />
     <Compile Include="Assets\Script\PowerUp.cs" />
     <Compile Include="Assets\Script\ObstacleController.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\FreeCameraLogic.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\SimpleSampleCharacterControl.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryWearLogic.cs" />
     <Compile Include="Assets\Script\GroundController.cs" />
-    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\DemoFree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -80,8 +75,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Supercyan Character Pack Animal People Sample\Shaders\SupercyanShader.shader" />
-    <None Include="Assets\Supercyan Character Pack Animal People Sample\Shaders\SupercyanShaderLighting.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
