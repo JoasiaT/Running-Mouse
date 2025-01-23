@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\ObstacleController.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\GroundController.cs" />
+    <Compile Include="Assets\Script\GameController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
