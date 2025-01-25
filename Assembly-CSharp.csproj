@@ -65,6 +65,7 @@
     <Compile Include="Assets\Movment.cs" />
     <Compile Include="Assets\Script\PowerUp.cs" />
     <Compile Include="Assets\Script\ObstacleController.cs" />
+    <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\GroundController.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
