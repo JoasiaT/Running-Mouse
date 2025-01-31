@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 public class CollisionDetect : MonoBehaviour
 {
     public PlayerController playerController;
-    public UIManagare uiManagare;
+    public UIManager uiManager;
+    public EndGameScreen endGameScreen;
 
-        // ..................................................."The Begginer Guide"...................................................................
-        // (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
+    // ..................................................."The Begginer Guide"...................................................................
+    // (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
 
     // (2) ("Take collision") -----> Metoda zostaje wykonana na wejsciu kolizji
 
@@ -39,11 +40,10 @@ public class CollisionDetect : MonoBehaviour
             {
                 playerController.playerHasShield = false;
                 playerController.shieldGameObject.SetActive(false);
-                uiManagare.shieldIcon.enabled = false;
+                uiManager.shieldIcon.enabled = false;
             }
             else
             {
- 
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
@@ -52,11 +52,13 @@ public class CollisionDetect : MonoBehaviour
             Debug.Log("shield activated");
             playerController.shieldGameObject.SetActive(true);
             playerController.playerHasShield = true;
-            uiManagare.shieldIcon.enabled = true;
+            uiManager.shieldIcon.enabled = true;
             Destroy(collision.gameObject);
         }
-
-
+        if (collision.gameObject.tag == "EndGame")
+        {
+            endGameScreen.setPlayerPoints(uiManager.playerController.points);
+        }
 
     }
 }

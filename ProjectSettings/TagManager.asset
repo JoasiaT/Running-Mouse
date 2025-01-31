@@ -7,6 +7,7 @@ TagManager:
   - Obsticle
   - Shield
   - Piano
+  - EndGame
   layers:
   - Default
   - TransparentFX

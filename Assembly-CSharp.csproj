@@ -60,9 +60,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\EndGameScreen.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
     <Compile Include="Assets\Script\CollisionDetect.cs" />
-    <Compile Include="Assets\Movment.cs" />
+    <Compile Include="Assets\Script\Movment.cs" />
+    <Compile Include="Assets\Script\MetaController.cs" />
+    <Compile Include="Assets\Script\MonsterController.cs" />
     <Compile Include="Assets\Script\PowerUp.cs" />
     <Compile Include="Assets\Script\ObstacleController.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
