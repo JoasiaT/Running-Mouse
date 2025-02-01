@@ -32,7 +32,7 @@ public class CollisionDetect : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) //(1)
     {
-        if (collision.gameObject.tag == "Obsticle")
+        if (collision.gameObject.tag == "Obsticle" && !playerController.playerHasShield)
         {
             //Debug.Log("Take collision"); //(2)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
@@ -49,7 +49,7 @@ public class CollisionDetect : MonoBehaviour
         }
         if (collision.gameObject.tag == "Shield")
         {
-            Debug.Log("shield activated");
+            //Debug.Log("shield activated");
             playerController.shieldGameObject.SetActive(true);
             playerController.playerHasShield = true;
             uiManager.shieldIcon.enabled = true;

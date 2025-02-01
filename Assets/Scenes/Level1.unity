@@ -216,7 +216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &37661024
 Transform:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 98b939cc9904f4b45bc190d5d1e9d07b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 98b939cc9904f4b45bc190d5d1e9d07b, type: 3}
       propertyPath: m_TagString
@@ -1109,12 +1109,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e6ce04d433343045b4f0d98c903c163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiManager: {fileID: 309966883}
   moveSpeed: 3
   jumpSpeed: 7
   animator: {fileID: 172573390}
   points: 0
   shieldGameObject: {fileID: 2056551414}
   playerHasShield: 0
+  shieldMaxTime: 5
+  shieldTime: 0
 --- !u!95 &172573390
 Animator:
   serializedVersion: 5
@@ -2935,7 +2938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &631029511
 Transform:
   m_ObjectHideFlags: 0
@@ -3613,7 +3616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &688891292
 Transform:
   m_ObjectHideFlags: 0
@@ -3910,7 +3913,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4922,7 +4925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eaa8dc240f0a1274782a5e7c6a0ab38d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eaa8dc240f0a1274782a5e7c6a0ab38d, type: 3}
       propertyPath: m_TagString
@@ -6423,7 +6426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1319097567
 Transform:
   m_ObjectHideFlags: 0
@@ -6624,7 +6627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1332271620
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9168,7 +9171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1732498410
 Transform:
   m_ObjectHideFlags: 0
@@ -9543,7 +9546,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7650267187344067039, guid: a4008c9bf81549d4bab522693435aeb3, type: 3}
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9911,7 +9914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1817480457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10113,7 +10116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1923754608
 Transform:
   m_ObjectHideFlags: 0
@@ -11458,7 +11461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2141681887
 Transform:
   m_ObjectHideFlags: 0

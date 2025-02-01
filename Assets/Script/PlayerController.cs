@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public UIManager uiManager;
     public float moveSpeed = 3f;
     public float jumpSpeed = 5f;
     public Animator animator; //(7)
     public int points = 0;
     public GameObject shieldGameObject;
     public bool playerHasShield = false;
+    public float shieldMaxTime = 5f;
+    public float shieldTime = 0f;
 
    // public Transform minXPlayerPos;
 
@@ -62,6 +65,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             animator.Play("Jump");
+        }
+
+        if (playerHasShield)
+        {
+            shieldTime += Time.deltaTime;
+            if (shieldTime >= shieldMaxTime)
+            {
+                playerHasShield = false;
+                shieldGameObject.SetActive(false);
+                uiManager.shieldIcon.enabled = false;
+                shieldTime = 0f;                
+            }
         }
     }
        
