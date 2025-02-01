@@ -11,14 +11,15 @@ public class PlayerController : MonoBehaviour
     public bool playerHasShield = false;
     public float shieldMaxTime = 5f;
     public float shieldTime = 0f;
-
-   // public Transform minXPlayerPos;
+   
+    // public Transform minXPlayerPos;
 
     // Start is called before the first frame update
     void Start()
     {
         shieldGameObject.SetActive(false);
         playerHasShield = false;
+
     }
 
     // Update is called once per frame
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             animator.Play("Jump");
+            //audioMananger.PlaySFX(audioMananger.jumpTake);
         }
 
         if (playerHasShield)
@@ -75,15 +77,9 @@ public class PlayerController : MonoBehaviour
                 playerHasShield = false;
                 shieldGameObject.SetActive(false);
                 uiManager.shieldIcon.enabled = false;
-                shieldTime = 0f;                
+                shieldTime = 0f;
+                //audioMananger.PlaySFX(audioMananger.shieldTake);
             }
         }
-    }
-       
-    
-
-       
-
-
-        
+    }      
 }

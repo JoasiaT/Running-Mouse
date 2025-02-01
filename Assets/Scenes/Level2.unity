@@ -4186,6 +4186,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b1b6bfee5001a994989066cbb2dde62f, type: 2}
+    - target: {fileID: 5465940246521907071, guid: 3d4b526ec3a17194b943d60182e9d129, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465940246521907071, guid: 3d4b526ec3a17194b943d60182e9d129, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4257,7 +4265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e6ce04d433343045b4f0d98c903c163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 890507243}
   moveSpeed: 3
   jumpSpeed: 7
   animator: {fileID: 634840586}
@@ -9642,7 +9650,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289739265
@@ -15518,6 +15526,6 @@ SceneRoots:
   - {fileID: 1571215577}
   - {fileID: 1090586114}
   - {fileID: 897015346}
+  - {fileID: 634840582}
   - {fileID: 890507244}
   - {fileID: 1111566572}
-  - {fileID: 634840582}

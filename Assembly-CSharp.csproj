@@ -66,12 +66,14 @@
     <Compile Include="Assets\Script\Movment.cs" />
     <Compile Include="Assets\Script\MetaController.cs" />
     <Compile Include="Assets\Script\MonsterController.cs" />
+    <Compile Include="Assets\Script\PersistanceObject.cs" />
     <Compile Include="Assets\Script\PowerUp.cs" />
     <Compile Include="Assets\Script\ObstacleController.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\UIManager.cs" />
     <Compile Include="Assets\Script\GroundController.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
+    <Compile Include="Assets\Script\AudioManangare.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

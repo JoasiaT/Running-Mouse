@@ -7,6 +7,7 @@ public class CollisionDetect : MonoBehaviour
     public PlayerController playerController;
     public UIManager uiManager;
     public EndGameScreen endGameScreen;
+    private AudioManangare audioMananger;
 
     // ..................................................."The Begginer Guide"...................................................................
     // (1) if (collision.gameObject.tag == "Obsticle") to oznacza, ze sprawdza czy gameObject z ktorym doszlo do kolizji ma tag "Obsticle"
@@ -17,17 +18,9 @@ public class CollisionDetect : MonoBehaviour
 
     //............................................................................................................................................
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        audioMananger = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManangare>();
     }
 
     private void OnCollisionEnter(Collision collision) //(1)
@@ -50,6 +43,7 @@ public class CollisionDetect : MonoBehaviour
         if (collision.gameObject.tag == "Shield")
         {
             //Debug.Log("shield activated");
+            audioMananger.PlaySFX(audioMananger.shieldTake);
             playerController.shieldGameObject.SetActive(true);
             playerController.playerHasShield = true;
             uiManager.shieldIcon.enabled = true;
