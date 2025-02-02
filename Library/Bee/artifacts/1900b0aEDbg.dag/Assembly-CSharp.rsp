@@ -364,6 +364,7 @@
 "Assets/Script/MonsterController.cs"
 "Assets/Script/Movment.cs"
 "Assets/Script/ObstacleController.cs"
+"Assets/Script/OptionsMenuController.cs"
 "Assets/Script/PersistanceObject.cs"
 "Assets/Script/PlayerController.cs"
 "Assets/Script/PowerUp.cs"

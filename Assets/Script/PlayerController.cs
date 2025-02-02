@@ -66,7 +66,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             animator.Play("Jump");
-            //audioMananger.PlaySFX(audioMananger.jumpTake);
         }
 
         if (playerHasShield)
@@ -78,7 +77,6 @@ public class PlayerController : MonoBehaviour
                 shieldGameObject.SetActive(false);
                 uiManager.shieldIcon.enabled = false;
                 shieldTime = 0f;
-                //audioMananger.PlaySFX(audioMananger.shieldTake);
             }
         }
     }      

@@ -9,6 +9,7 @@ TagManager:
   - Piano
   - EndGame
   - Audio
+  - Meta
   layers:
   - Default
   - TransparentFX

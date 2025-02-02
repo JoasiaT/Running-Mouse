@@ -25,19 +25,30 @@ public class CollisionDetect : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) //(1)
     {
-        if (collision.gameObject.tag == "Obsticle" && !playerController.playerHasShield)
+        if (collision.gameObject.tag == "Obsticle")
         {
-            //Debug.Log("Take collision"); //(2)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
-            if (playerController.playerHasShield)
+            if (!playerController.playerHasShield)
             {
-                playerController.playerHasShield = false;
-                playerController.shieldGameObject.SetActive(false);
-                uiManager.shieldIcon.enabled = false;
+                //Debug.Log("Take collision"); //(2)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name); //(3)
+                if (playerController.playerHasShield)
+                {
+
+                    playerController.playerHasShield = false;
+                    playerController.shieldGameObject.SetActive(false);
+                    uiManager.shieldIcon.enabled = false;
+                }
+                else
+                {
+                    audioMananger.PlaySFX(audioMananger.colillisionTake);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                // gdy shield wlaczony, dodaj punkt i usun obiekt, tak jak przy minieciu obiektu
+                playerController.points++; 
+                Destroy(collision.gameObject);
             }
         }
         if (collision.gameObject.tag == "Shield")
@@ -51,8 +62,11 @@ public class CollisionDetect : MonoBehaviour
         }
         if (collision.gameObject.tag == "EndGame")
         {
+            audioMananger.StopMusic();
+            audioMananger.PlaySFX(audioMananger.victory);
             endGameScreen.setPlayerPoints(uiManager.playerController.points);
         }
 
     }
+
 }

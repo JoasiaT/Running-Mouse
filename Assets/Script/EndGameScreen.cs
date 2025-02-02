@@ -6,7 +6,13 @@ public class EndGameScreen : MonoBehaviour
 {
     public TMP_Text playerPointsText;
     //public TMP_Text endGamePoints;
-    
+    private AudioManangare audioMananger;
+
+    private void Awake()
+    {
+        audioMananger = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManangare>();
+    }
+
     public void setPlayerPoints(int playerPoints)
     {
         Time.timeScale = 0;
@@ -17,6 +23,7 @@ public class EndGameScreen : MonoBehaviour
     public void PlayLevel2()
     {
         Time.timeScale = 1;
+        audioMananger.PlayMusic();
         SceneManager.LoadScene("Level2");
     }
 

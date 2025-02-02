@@ -3,7 +3,14 @@ guid: d993f87683c09d94e8a1457999c8b2e6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - SFXSource: {instanceID: 0}
+  - background: {instanceID: 0}
+  - victory: {fileID: 8300000, guid: 1e35a92885cdf53408544456ed816815, type: 3}
+  - shieldTake: {fileID: 8300000, guid: cbce4da84509de6468bf7852195e19e2, type: 3}
+  - jumpTake: {fileID: 8300000, guid: 090a8a87a0034454e95554fab270cba0, type: 3}
+  - colillisionTake: {fileID: 8300000, guid: 97978d0e972e1194ab307dd1227c8d5b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

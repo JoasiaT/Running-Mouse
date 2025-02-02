@@ -190,8 +190,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2005022108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.464, y: 0}
-  m_AnchorMax: {x: 0.464, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 264160911}
   - component: {fileID: 264160910}
   m_Layer: 5
-  m_Name: SFX(TMP)
+  m_Name: SFX Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -678,8 +678,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 494343446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.464, y: 0}
-  m_AnchorMax: {x: 0.464, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -747,17 +747,17 @@ RectTransform:
   m_GameObject: {fileID: 445756594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.1767964, y: 3.2413785, z: 3.2413785}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2086238288}
   - {fileID: 23513011}
   - {fileID: 2005022108}
-  m_Father: {fileID: 1694370847}
+  m_Father: {fileID: 1256869409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -23.845781}
+  m_AnchoredPosition: {x: -61.779354, y: 109.99242}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &445756596
@@ -804,13 +804,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1567320407}
   m_HandleRect: {fileID: 28282301}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.464
+  m_Value: 0.17
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1789532380}
+        m_TargetAssemblyTypeName: AudioManangare, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &484854297
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,7 +838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &484854298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1167,7 +1179,7 @@ AudioSource:
   m_GameObject: {fileID: 772375829}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2323842213651975926, guid: dd40de0d376a9ba48af587977a0376e4, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1772,7 +1784,7 @@ AudioSource:
   m_GameObject: {fileID: 1216785511}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6439231185185971821, guid: dd40de0d376a9ba48af587977a0376e4, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1889,7 +1901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1256869409
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1906,6 +1918,7 @@ RectTransform:
   - {fileID: 1915484330}
   - {fileID: 1348237749}
   - {fileID: 1694370847}
+  - {fileID: 445756595}
   - {fileID: 264160909}
   - {fileID: 1479580734}
   m_Father: {fileID: 2121127198}
@@ -2249,7 +2262,19 @@ MonoBehaviour:
   m_Value: 0.464
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1789532380}
+        m_TargetAssemblyTypeName: AudioManangare, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1497226511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,7 +2441,7 @@ RectTransform:
   m_Father: {fileID: 1367669730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.464, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2491,7 +2516,7 @@ RectTransform:
   m_Father: {fileID: 23513011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.464, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2545,7 +2570,7 @@ GameObject:
   - component: {fileID: 1694370849}
   - component: {fileID: 1694370848}
   m_Layer: 5
-  m_Name: Music(TMP)
+  m_Name: MusicText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2562,13 +2587,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.1767964, y: 3.2413785, z: 3.2413785}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 445756595}
+  m_Children: []
   m_Father: {fileID: 1256869409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -61.77932, y: 187.28561}
+  m_AnchoredPosition: {x: -61.779354, y: 187.28552}
   m_SizeDelta: {x: 144.33444, y: 26.24558}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1694370848
@@ -2831,6 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d993f87683c09d94e8a1457999c8b2e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: dd40de0d376a9ba48af587977a0376e4, type: 2}
   audioSource: {fileID: 1216785512}
   SFXSource: {fileID: 772375830}
   background: {fileID: 8300000, guid: 2189055dcb9b3ba46a0dec8b0bca8bc0, type: 3}
@@ -2838,6 +2863,8 @@ MonoBehaviour:
   shieldTake: {fileID: 8300000, guid: cbce4da84509de6468bf7852195e19e2, type: 3}
   jumpTake: {fileID: 8300000, guid: 090a8a87a0034454e95554fab270cba0, type: 3}
   colillisionTake: {fileID: 8300000, guid: 97978d0e972e1194ab307dd1227c8d5b, type: 3}
+  musicSlider: {fileID: 445756596}
+  sfxSlider: {fileID: 1479580735}
 --- !u!4 &1789532381
 Transform:
   m_ObjectHideFlags: 0
