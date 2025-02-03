@@ -360,7 +360,6 @@
 "Assets/Script/GameController.cs"
 "Assets/Script/GroundController.cs"
 "Assets/Script/MainMenu.cs"
-"Assets/Script/MetaController.cs"
 "Assets/Script/MonsterController.cs"
 "Assets/Script/Movment.cs"
 "Assets/Script/ObstacleController.cs"

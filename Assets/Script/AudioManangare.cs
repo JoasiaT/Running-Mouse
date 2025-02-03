@@ -49,14 +49,19 @@ public class AudioManangare : MonoBehaviour
         SFXSource.PlayOneShot(clip);
     }
 
-    public void PlayMusic()
+ 
+    public void PlayMusic() //Co tutaj, nie gra?
     {
         audioSource.Play();
+        //if(audioSource.Stop)
+        {
+           // AudioSorce.Stop(audioSorce.Play);
+        }
     }
 
     public void StopMusic()
     {
-        audioSource.Stop();
+       audioSource.Stop();
     }
 
     public void SetMusicVolume()

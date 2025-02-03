@@ -40,7 +40,10 @@ public class CollisionDetect : MonoBehaviour
                 }
                 else
                 {
-                    audioMananger.PlaySFX(audioMananger.colillisionTake);
+                    if (audioMananger != null)
+                    {
+                        audioMananger.PlaySFX(audioMananger.colillisionTake);
+                    }
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
             }
@@ -54,7 +57,10 @@ public class CollisionDetect : MonoBehaviour
         if (collision.gameObject.tag == "Shield")
         {
             //Debug.Log("shield activated");
-            audioMananger.PlaySFX(audioMananger.shieldTake);
+            if (audioMananger != null)
+            {
+                audioMananger.PlaySFX(audioMananger.shieldTake);
+            }
             playerController.shieldGameObject.SetActive(true);
             playerController.playerHasShield = true;
             uiManager.shieldIcon.enabled = true;
@@ -62,8 +68,11 @@ public class CollisionDetect : MonoBehaviour
         }
         if (collision.gameObject.tag == "EndGame")
         {
-            audioMananger.StopMusic();
-            audioMananger.PlaySFX(audioMananger.victory);
+            if (audioMananger != null)
+            {
+                audioMananger.StopMusic();
+                audioMananger.PlaySFX(audioMananger.victory);
+            }
             endGameScreen.setPlayerPoints(uiManager.playerController.points);
         }
 

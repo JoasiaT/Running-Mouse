@@ -23,7 +23,10 @@ public class EndGameScreen : MonoBehaviour
     public void PlayLevel2()
     {
         Time.timeScale = 1;
-        audioMananger.PlayMusic();
+        if (audioMananger != null)
+        {
+            audioMananger.PlayMusic();
+        }
         SceneManager.LoadScene("Level2");
     }
 

@@ -79,5 +79,9 @@ public class PlayerController : MonoBehaviour
                 shieldTime = 0f;
             }
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }      
 }
